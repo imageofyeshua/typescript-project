@@ -15,6 +15,7 @@ export class User implements Mappable {
       lng: parseFloat(faker.address.longitude()),
     };
   }
+  date: Date = new Date();
   color: string = "red";
 
   markerContent(): string {
